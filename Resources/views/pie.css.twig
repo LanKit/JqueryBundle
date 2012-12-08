@@ -1,0 +1,23 @@
+<!--[if IE]>
+<style type="text/css">
+/* jQueryUI CSS3 PIE Hack for IE 6-8 to get rounded corners */
+.core-pie,
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-right {
+    behavior: url({{ app.request.getBasePath() }}/bundles/lankitjquery/js/PIE.htc);
+    position: relative;
+    z-index: 0;
+}
+
+/* CSS3 PIE currently only supports border-radius */
+.ui-corner-all { border-radius: 4px; }
+.ui-corner-top { border-radius: 4px 4px 0px 0px; }
+.ui-corner-bottom { border-radius: 0px 0px 4px 4px; }
+.ui-corner-right { border-radius: 0px 4px 4px 0px; }
+.ui-corner-left { border-radius: 4px 0px 0px 4px; }
+.ui-widget-shadow { border-radius: 5px; }
+</style>
+<![endif]-->
